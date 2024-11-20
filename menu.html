@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunan Chop Suey - Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Hunan Chop Suey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Page with Tabs and Accordion -->
+ <div class="container menu-page">
+    <h1 class="text-center">Our Menu</h1>
+
+    <!-- Tabs for Sections -->
+    <ul class="nav nav-tabs" id="menuTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="appetizers-tab" data-bs-toggle="tab" data-bs-target="#appetizers" type="button" role="tab">Appetizers</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="soup-tab" data-bs-toggle="tab" data-bs-target="#soup" type="button" role="tab">Soup</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="vegetable-tab" data-bs-toggle="tab" data-bs-target="#vegetable" type="button" role="tab">Vegetable</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="seafood-tab" data-bs-toggle="tab" data-bs-target="#seafood" type="button" role="tab">Seafood</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="catfish-tab" data-bs-toggle="tab" data-bs-target="#catfish" type="button" role="tab">Catfish</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="chicken-tab" data-bs-toggle="tab" data-bs-target="#chicken" type="button" role="tab">Chicken Dishes</button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="menuTabContent">
+        <!-- Appetizers Section -->
+        <div class="tab-pane fade show active" id="appetizers" role="tabpanel">
+            <div class="accordion" id="appetizerAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="potStickersHeader">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#potStickers" aria-expanded="true">
+                            Pot Stickers - $6.75
+                        </button>
+                    </h2>
+                    <div id="potStickers" class="accordion-collapse collapse show" aria-labelledby="potStickersHeader">
+                        <div class="accordion-body d-flex align-items-center">
+                            <div class="me-3">
+                                <img src="images/pot-stickers.jpg" alt="Pot Stickers" class="img-fluid" style="width: 150px;">
+                            </div>
+                            <div>
+                                <p>Delicious pot stickers filled with seasoned pork and vegetables. Served with a savory soy-based dipping sauce.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soup Section -->
+        <div class="tab-pane fade" id="soup" role="tabpanel">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="images/wonton-soup.jpg" alt="Wonton Soup" class="img-fluid" style="width: 150px;">
+                        </div>
+                        <div>
+                            <strong>Wonton Soup - Half $3.95 / Whole $6.75</strong>
+                            <p>A comforting broth with tender wontons stuffed with seasoned pork and shrimp. Served with fresh vegetables.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Vegetable Section -->
+        <div class="tab-pane fade" id="vegetable" role="tabpanel">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="images/vegetable-delight.jpg" alt="Vegetable Delight" class="img-fluid" style="width: 150px;">
+                        </div>
+                        <div>
+                            <strong>Vegetable Delight - Half $7.50 / Whole $10.25</strong>
+                            <p>A medley of fresh vegetables stir-fried in a light sauce. Includes broccoli, bell peppers, carrots, and more.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seafood Section -->
+        <div class="tab-pane fade" id="seafood" role="tabpanel">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="images/sweet-sour-shrimp.jpg" alt="Sweet and Sour Shrimp" class="img-fluid" style="width: 150px;">
+                        </div>
+                        <div>
+                            <strong>Sweet and Sour Shrimp - Half $8.50 / Whole $12.00</strong>
+                            <p>Shrimp stir-fried in a tangy, sweet, and sour sauce, served with colorful bell peppers and pineapple chunks.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Catfish Section -->
+        <div class="tab-pane fade" id="catfish" role="tabpanel">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="images/catfish-fillet.jpg" alt="Catfish Fillet Dinner" class="img-fluid" style="width: 150px;">
+                        </div>
+                        <div>
+                            <strong>Catfish Fillet Dinner - $13.00</strong>
+                            <p>Fried, crispy catfish fillets served with a side of rice and your choice of dipping sauce.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Chicken Dishes Section -->
+        <div class="tab-pane fade" id="chicken" role="tabpanel">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="images/chicken-with-vegetables.jpg" alt="Chicken with Vegetables" class="img-fluid" style="width: 150px;">
+                        </div>
+                        <div>
+                            <strong>Chicken with Vegetables - Half $7.95 / Whole $11.50</strong>
+                            <p>Grilled chicken pieces served with a variety of stir-fried vegetables including broccoli, mushrooms, and bell peppers.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
