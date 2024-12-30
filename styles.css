@@ -1,10 +1,19 @@
-/* Global font styling */
+/* Global Styles - Apply to all pages */
 body, html {
   font-family: 'Rowdies', sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Navigation Bar Styling */
@@ -32,7 +41,18 @@ body, html {
   color: #f5e2dc;
 }
 
-/* Video Section Styling (Home Page) */
+/* Footer Styling */
+.footer {
+  background-color: #212529; /* Dark grey for contrast */
+  color: #f5e2dc; /* Light cream color */
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* --- Styles for the Home Page (Video Section) --- */
 .video-section {
   position: relative;
   width: 100%;
@@ -73,18 +93,7 @@ p.restaurant-caption {
   color: #f5e2dc;
 }
 
-/* Footer Styling */
-.footer {
-  background-color: #212529; /* Dark grey for contrast */
-  color: #f5e2dc; /* Light cream color */
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Styles for the Menu Page */
+/* --- Styles for the Menu Page --- */
 .menu-page {
   background-color: #97e06b; /* Light green background */
   padding: 40px 0;
@@ -95,10 +104,10 @@ p.restaurant-caption {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #3b3b30; /* Darker olive for readability */
+  color: #2e3d26; /* Darker green for title */
 }
 
-.menu-page .menu-section {
+.menu-section {
   margin: 0 auto;
   width: 85%;
   max-width: 900px;
@@ -109,16 +118,16 @@ p.restaurant-caption {
   margin-bottom: 20px;
 }
 
-.menu-page .menu-section h2 {
+.menu-section h2 {
   font-size: 2em;
-  color: #3b3b30;
+  color: #2e3d26; /* Dark green */
   border-bottom: 2px solid #FFDB00;
   padding-bottom: 10px;
   margin-bottom: 15px;
   text-align: center;
 }
 
-.menu-page .menu-item {
+.menu-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -126,23 +135,23 @@ p.restaurant-caption {
   border-bottom: 1px solid #d3d3d3;
 }
 
-.menu-page .menu-item h3 {
+.menu-item h3 {
   font-size: 1.3em;
-  color: #3b3b30;
+  color: #1a2a1a; /* Dark brownish green */
   margin: 0;
 }
 
-.menu-page .item-description {
+.item-description {
   font-size: 1em;
-  color: #5a5a44; /* Subtle olive tone for descriptions */
+  color: #6a7f56; /* Lighter green-gray for description */
   max-width: 70%;
   font-style: italic;
 }
 
-.menu-page .item-price {
+.item-price {
   font-size: 1.2em;
   font-weight: bold;
-  color: #3b3b30;
+  color: #d77a00; /* Warm orange-brown for prices */
 }
 
 .menu-page img {
@@ -150,6 +159,30 @@ p.restaurant-caption {
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  color: #1a2a1a; /* Dark brownish green for accordion button */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #97e06b;
+  color: #1a2a1a; /* Dark brownish green for active accordion */
+}
+
+.accordion-body {
+  padding: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-body img {
+  width: 150px;
+  margin-right: 20px;
 }
 
 /* Alternating Background Colors */
@@ -162,16 +195,19 @@ p.restaurant-caption {
 }
 
 /* Hover Effects on Menu Items */
-.menu-page .menu-item:hover {
+.menu-item:hover {
   background-color: #e6f7da; /* Light green tint on hover */
-  color: #3b3b30;
+  color: #1a2a1a; /* Dark brownish green text on hover */
 }
 
-.menu-page .menu-list li:hover {
-  color: #FFDB00;
+/* Hover Effects on Accordion Buttons */
+.accordion-button:hover {
+  background-color: #e6f7da;
+  color: #1a2a1a;
 }
 
-/* Media Queries for Mobile */
+
+/* --- Media Queries for Mobile --- */
 @media (max-width: 768px) {
   .navbar-nav {
     text-align: center;
